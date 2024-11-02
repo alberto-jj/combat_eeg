@@ -5,10 +5,12 @@ Benchmarking Combining Batches (ComBat) models on spectral parameterized feature
 
 
 - The original sources/links to raw rsEEG data are available in [our manuscript](https://doi.org/10.1016/j.clinph.2024.09.019).
-  - To download LEMON dataset, we recommend to use the script and read the docs from [Engemann D, et al. NIMG 2022](https://www.sciencedirect.com/science/article/pii/S105381192200636X?via%3Dihub), available [here](https://github.com/meeg-ml-benchmarks/brain-age-benchmark-paper).
+  - To download LEMON dataset, we recommend the following steps:
+  - First, you will need to download and unzip the LEMON behavioral and demographics file (META_File_IDs_Age_Gender_Education_Drug_Smoke_SKID_LEMON.csv) available at the [LEMON website](https://fcp-indi.s3.amazonaws.com/data/Projects/INDI/MPI-LEMON/Compressed_tar/Behavioural_Data_MPILMBB_LEMON.tar.gz).
+  - Then, run download_data_lemon.py from [Engemann D, et al. NIMG 2022](https://www.sciencedirect.com/science/article/pii/S105381192200636X?via%3Dihub), available [here](https://github.com/meeg-ml-benchmarks/brain-age-benchmark-paper).
+  - Finally, convert LEMON to BIDS.
 
     
-
 - Automated preprocessing was performed using [sova-harmony](https://github.com/GRUNECO/eeg_harmonization) in Python.
 
 
